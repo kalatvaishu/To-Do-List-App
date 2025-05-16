@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css
+">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div class="task-input">
+            <input type="text" name="" id="taskInput" placeholder="Enter a task...">
+            <select name="" id="priority">
+                <option value="priority" hidden>Priority</option>
+                <option value="low">low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="serach-bar">
+            <input type="text" name="" id="searchInput" placeholder="search tasks..." onkeyup="searchTasks()">
+        </div>
+
+        <ul id="tasklist"></ul>
+        <button class="clear-btn">Clear All Tasks</button>
+    </div>
+    </div>
+
+</body>
+</html>
